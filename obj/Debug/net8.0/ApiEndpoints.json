@@ -1,0 +1,187 @@
+[
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "deleteBook",
+    "RelativePath": "api/books/deleteBook/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library_Management.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "getAllBooks",
+    "RelativePath": "api/books/getAllBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Library_Management.Models.Book, Library Management, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Get All Books"
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "getBookById",
+    "RelativePath": "api/books/getBookById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library_Management.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "getBooksByAuthorName",
+    "RelativePath": "api/books/getBooksByAuthorName/author/{authorName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "getBooksByYear",
+    "RelativePath": "api/books/getBooksByYear/year/{year}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "Pagination",
+    "RelativePath": "api/books/Pagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Pagination"
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "postBook",
+    "RelativePath": "api/books/postBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "Library_Management.Models.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library_Management.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Add a Book"
+  },
+  {
+    "ContainingType": "Library_Management.Controllers.BookControllers",
+    "Method": "updateBook",
+    "RelativePath": "api/books/updateBook/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "book",
+        "Type": "Library_Management.Models.Book",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Library_Management.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
