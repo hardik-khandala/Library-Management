@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Workspace\\Radixweb\\Library-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|d:\\workspace\\radixweb\\library-management\\controllers\\bookcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|solutionrelative:controllers\\bookcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|d:\\workspace\\radixweb\\library-management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|d:\\workspace\\radixweb\\library-management\\models\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|solutionrelative:models\\bookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|d:\\workspace\\radixweb\\library-management\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{10B42620-AC61-4AF9-A57E-C6763012AE6B}|Library Management.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Workspace\\Radixweb\\Library-Management\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Workspace\\Radixweb\\Library-Management\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA9wCAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T15:35:02.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookControllers.cs",
+              "DocumentMoniker": "D:\\Workspace\\Radixweb\\Library-Management\\Controllers\\BookControllers.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookControllers.cs",
+              "ToolTip": "D:\\Workspace\\Radixweb\\Library-Management\\Controllers\\BookControllers.cs",
+              "RelativeToolTip": "Controllers\\BookControllers.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAwwIIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T15:31:22.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookDbContext.cs",
+              "DocumentMoniker": "D:\\Workspace\\Radixweb\\Library-Management\\Models\\BookDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\BookDbContext.cs",
+              "ToolTip": "D:\\Workspace\\Radixweb\\Library-Management\\Models\\BookDbContext.cs",
+              "RelativeToolTip": "Models\\BookDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T15:31:09.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Workspace\\Radixweb\\Library-Management\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "D:\\Workspace\\Radixweb\\Library-Management\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T15:29:54.423Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

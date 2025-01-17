@@ -76,9 +76,13 @@ namespace Library_Management.Controllers
         public async Task<ActionResult<Book>> deleteBook(int id)
         {
             var book = await _db.Books.FindAsync(id);
-            if(book is null)
+            if (book is null)
             {
-                return NotFound();  
+                return NotFound($"Book with ID {id} not found.");
+            }
+            if (book.Stock > 50)
+            {
+                return BadRequest($"Book cannot be deleted because its stock is greater than 50.");
             }
             _db.Books.Remove(book);
             await _db.SaveChangesAsync();
@@ -107,6 +111,25 @@ namespace Library_Management.Controllers
             return b;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Book>>> getSortedBooks([FromQuery] string sortBy = "title", [FromQuery] string order = "asc")
+        {
+            var query = _db.Books.AsQueryable();
+
+            // Sorting logic
+            if (sortBy.ToLower() == "price")
+            {
+                query = order.ToLower() == "asc" ? query.OrderBy(b => b.Price) : query.OrderByDescending(b => b.Price);
+            }
+            else
+            {
+                query = order.ToLower() == "asc" ? query.OrderBy(b => b.Title) : query.OrderByDescending(b => b.Title);
+            }
+
+            var books = await query.ToListAsync();
+            return Ok(books);
+        }
+
         [HttpGet(Name = "Pagination")]
         public async Task<ActionResult> Pagination([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 5)
         {
@@ -117,5 +140,18 @@ namespace Library_Management.Controllers
             query = query.Skip((pageNumber - 1) * pageSize).Take(pageSize);
             return Ok(query);
         }
+
+        [HttpGet("in-stock")]
+        public async Task<ActionResult<IEnumerable<Book>>> getBooksInStock()
+        {
+            var books = await _db.Books.Where(b => b.Stock > 0).ToListAsync();
+            if (books.Count == 0)
+            {
+                return NotFound("No books available with Stock greater than 0.");
+            }
+            return Ok(books);
+        }
+
+       
     }
 }
